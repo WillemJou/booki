@@ -1,8 +1,8 @@
 ![Logo](/img/Booki@3x.png)
 
-# Booki - A student BnB-like Integration
+# Booki - A student AirBnB-like Integration
 
-A static page with only HTML and pure CSS
+A static AirBnB page with only HTML and pure CSS
 To show the good practices of these two web bases without libraries.
 
 No JavaScript.
