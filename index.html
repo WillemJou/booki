@@ -33,22 +33,24 @@
     <section class="research-section">
         <div class="search-bar">
             <i class="icon fa-solid fa-location-dot" alt="marqueur de géolocalisation"></i>
-            <input class="search-bar__input" placeholder="Marseille, France" />
-            <button class="search-bar__btn">Rechercher</button>
+            <div class="search-bar__input-and-button-container"><input class="search-bar__input"
+                    placeholder="Marseille, France" />
+                <button class="search-bar__btn">Rechercher</button>
+            </div>
         </div>
         <section class="filters-section">
             <h2 class="filters-section__title">Filtres</h2>
             <div class="filters-section_layout">
-                <button class="filters-section__btn" href="#">
+                <button class="filters-section__btn economic-btn" href="#">
                     <i class="icon fa-solid fa-wallet" alt="économique"></i>
                     <span class="filters-section__tag">Économique</span></button>
-                <button class="filters-section__btn" href="#">
+                <button class="filters-section__btn family-btn" href="#">
                     <i class="icon fa-solid fa-child" alt="familial"></i>
                     <span class="filters-section__tag">Familial</span></button>
-                <button class="filters-section__btn" href="#">
+                <button class="filters-section__btn lovers-btn" href="#">
                     <i class="icon fa-solid fa-heart" alt="romantique"></i>
                     <span class="filters-section__tag">Romantique</span></button>
-                <button class="filters-section__btn" href="#">
+                <button class="filters-section__btn pets-btn" href="#">
                     <i class="icon fa-solid fa-dog" alt="dog"></i>
                     <span class="filters-section__tag">Animaux autorisés</span></button>
             </div>
@@ -60,7 +62,9 @@
     </section>
     <main role="main" class="main">
         <section class="accomodation-section">
-            <h2 class="main-section__title accomodation-section__title">Hébergements à Marseille</h2>
+            <header class="accomodation-section__header">
+                <h2 class="title accomodation-section__title">Hébergements à Marseille</h2>
+            </header>
             <ul class="accomodation-section__list">
                 <li class="card hotel-card">
                     <a href="#" class="hotel-card__link">
@@ -172,7 +176,7 @@
         <section class="popular-section">
             <header class="popular-section__header">
                 <i class="fa-solid fa-chart-line chart-icon" alt="populaire"></i>
-                <h2 class="main-section__title popular-section__title">Les plus populaires</h2>
+                <h2 class="title popular-section__title">Les plus populaires</h2>
             </header>
             <ul class="popular-section__list">
                 <li class="card popular-card">
@@ -234,13 +238,17 @@
                 </li>
             </ul>
         </section>
-        <section class="activities">
-            <h2 class="main-section__title activities__title">Activités à Marseille</h2>
+        <section class="activity-session">
+            <header class="activity-session__header">
+                <h2 class="title activity-session__title">Activités à Marseille</h2>
+            </header>
             <ul class="activities__list">
                 <li class="card activity-card activity-card1 ">
                     <a href="#" class="activity-card__link">
-                        <img class="activity-card__photo" src="https://source.unsplash.com/random/?port,Marseille"
-                            alt="Vieux Port">
+                        <div class="activity-card__photo-container">
+                            <img class="activity-card__photo" src="https://source.unsplash.com/random/?port,Marseille"
+                                alt="Vieux Port">
+                        </div>
                         <div class="activity-card__cartel">
                             <h3 class="description-title activity-card__title">Vieux Port</h3>
                         </div>
@@ -248,8 +256,10 @@
                 </li>
                 <li class="card activity-card activity-card2">
                     <a href="#" class="activity-card__link">
-                        <img class="activity-card__photo" src="https://source.unsplash.com/random/?fort,Pomègues"
-                            alt="Fort de Pomègues">
+                        <div class="activity-card__photo-container">
+                            <img class="activity-card__photo" src="https://source.unsplash.com/random/?fort,Pomègues"
+                                alt="Fort de Pomègues">
+                        </div>
                         <div class="activity-card__cartel">
                             <h3 class="description-title activity-card__title">Fort de Pomègues</h3>
                         </div>
@@ -257,8 +267,10 @@
                 </li>
                 <li class="card activity-card activity-card3">
                     <a href="#" class="activity-card__link">
-                        <img class="activity-card__photo" src="https://source.unsplash.com/random/?île,Frioul"
-                            alt="Île du Frioul">
+                        <div class="activity-card__photo-container">
+                            <img class="activity-card__photo" src="https://source.unsplash.com/random/?île,Frioul"
+                                alt="Île du Frioul">
+                        </div>
                         <div class="activity-card__cartel">
                             <h3 class="description-title activity-card__title">Île du Frioul</h3>
                         </div>
@@ -266,8 +278,10 @@
                 </li>
                 <li class="card activity-card activity-card4">
                     <a href="#" class="activity-card__link">
-                        <img class="activity-card__photo" src="https://source.unsplash.com/random/?Calanques"
-                            alt="Parc National des Calanques">
+                        <div class="activity-card__photo-container">
+                            <img class="activity-card__photo" src="https://source.unsplash.com/random/?Calanques"
+                                alt="Parc National des Calanques">
+                        </div>
                         <div class="activity-card__cartel">
                             <h3 class="description-title activity-card__title">Parc National des Calanques</h3>
                         </div>
@@ -275,9 +289,11 @@
                 </li>
                 <li class="card activity-card activity-card5">
                     <a href="#" class="activity-card__link">
-                        <img class="activity-card__photo"
-                            src="https://source.unsplash.com/random/?Notre-Dame-de-la-Garde"
-                            alt="Notre-Dame-de-la-Garde">
+                        <div class="activity-card__photo-container">
+                            <img class="activity-card__photo"
+                                src="https://source.unsplash.com/random/?Notre-Dame-de-la-Garde"
+                                alt="Notre-Dame-de-la-Garde">
+                        </div>
                         <div class="activity-card__cartel">
                             <h3 class="description-title activity-card__title">Notre-Dame-de-la-Garde</h3>
                         </div>
@@ -285,8 +301,10 @@
                 </li>
                 <li class="card activity-card activity-card6">
                     <a href="#" class="activity-card__link">
-                        <img class="activity-card__photo" src="https://source.unsplash.com/random/?parc,Longchamp"
-                            alt="Parc Longchamp">
+                        <div class="activity-card__photo-container">
+                            <img class="activity-card__photo" src="https://source.unsplash.com/random/?parc,Longchamp"
+                                alt="Parc Longchamp">
+                        </div>
                         <div class="activity-card__cartel">
                             <h3 class="description-title activity-card__title">Parc Longchamp</h3>
                         </div>
